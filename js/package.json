@@ -1,0 +1,11 @@
+{
+    "name": "wwo-api-with-node",
+    "version": "1.0.0",
+    "description": "The Pavones Surfer's Weather Report",
+    "dependencies": {
+        "express": "4.2.x",
+        "request": "^2.53.0"
+    },
+    "private": true,
+    "license": "MIT"
+}
