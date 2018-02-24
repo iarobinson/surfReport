@@ -1,11 +1,17 @@
 $(document).ready(function () {
-    
-  var data = $.get(
-    'https://api.worldweatheronline.com/premium/v1/marine.ashx', 
-    key: 'fdb970a6ea0d487d98a195850182002',
-    q: location,
-  )
+
+  var url = 'http://magicseaweed.com/api/';
+  var apiKey = '466688abbaf73cd10126b262f6fab3a6';
+  var spot = '/forecast/?spot_id=466';
+  var units = "&units=us";
+
+  var urlConstructed = url + apiKey + spot + units;
+  console.log(urlConstructed);
   
-  console.log(data);
-  $('.data').text(data);
+  // Get info from API call
+  $.getJSON(urlConstructed, function(data) {
+    console.log(data);
+    $('.data').append(data);
+  });
 });
+
