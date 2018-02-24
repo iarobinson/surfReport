@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  var url = 'http://magicseaweed.com/api/';
+  var url = 'https://magicseaweed.com/api/';
   var apiKey = '466688abbaf73cd10126b262f6fab3a6';
   var spot = '/forecast/?spot_id=466';
   var units = "&units=us";
